@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Foo</title>
+</head>
+<body>
+
+<canvas id="foo" width="480" height="360">
+Foo canvas
+</canvas>
+
+<hr>
+
+<script type="text/javascript">
+	
+
+const id = 'ramTL-k5Vpk';
+const fn = `ytqr@${id}.png`;
+
+const yt = `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
+
+const url = `https://www.youtube.com/watch?q=${id}`;
+const xurl = encodeURIComponent(url);
+const qr = `https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl=${xurl}`;
+ 
+
+const d = document;
+const canvas = d.querySelector('#foo');
+const ctx = canvas.getContext('2d');
+const sz = 100;
+const pad = 16;
+const w = canvas.width;
+const h = canvas.height;
+
+const yti = new Image();
+//yti.crossOrigin="anonymous";
+yti.onload = function() {
+    ctx.drawImage(yti,0,0,w,h);
+}
+yti.src = yt;
+
+const qri = new Image();
+//qri.crossOrigin="anonymous";
+qri.onload = function() {
+	dx = canvas.width-pad-sz;
+	dy = canvas.height-pad-sz-30;
+    ctx.drawImage(qri,dx,dy,sz,sz);
+}
+qri.src = qr;
+
+
+</script>
+
+</body>
+</html>
