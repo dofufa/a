@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Foo</title>
+</head>
+<body>
+
+<!--
+	https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas
+-->
+
+<canvas id="foo" width="480" height="360">
+Foo canvas
+</canvas>
+
+<hr>
+
+<img id="moo" alt="foo alt" title="foo title" src="">
+
+<script type="text/javascript">
+	
+const d = document;
+const canvas = d.querySelector('#foo');
+const ctx = canvas.getContext('2d');
+const qrs = 100;
+const pad = 16;
+
+ctx.fillStyle = 'green';
+
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+
+ctx.fillStyle = 'blue';
+ctx.fillRect(canvas.width-pad-qrs, canvas.height-pad-qrs, qrs, qrs);
+
+imgurl = canvas.toDataURL('image/png');
+
+d.querySelector('#moo').src = imgurl;
+
+
+</script>
+
+</body>
+</html>
