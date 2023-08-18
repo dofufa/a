@@ -42,14 +42,14 @@ const h = canvas.height;
 // https://stackoverflow.com/a/22716873
 
 const yti = new Image();
-yti.crossOrigin="anonymous";
+//yti.crossOrigin="anonymous";
 yti.onload = function() {
     ctx.drawImage(yti,0,0,w,h);
 }
 yti.src = yt;
 
 const qri = new Image();
-qri.crossOrigin="anonymous";
+//qri.crossOrigin="anonymous";
 qri.onload = function() {
 	dx = canvas.width-pad-sz;
 	dy = canvas.height-pad-sz-30;
