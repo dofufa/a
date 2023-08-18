@@ -19,7 +19,7 @@ Foo canvas
 const id = 'ramTL-k5Vpk';
 const fn = `ytqr@${id}.png`;
 
-const yt = `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
+const yt = `https://img.youtube.com/vi/${id}/2.jpg`;
 
 const url = `https://www.youtube.com/watch?q=${id}`;
 const xurl = encodeURIComponent(url);
@@ -35,20 +35,29 @@ const w = canvas.width;
 const h = canvas.height;
 
 const yti = new Image();
-//yti.crossOrigin="anonymous";
-yti.onload = function() {
-    ctx.drawImage(yti,0,0,w,h);
-}
-yti.src = yt;
-
 const qri = new Image();
+
 //qri.crossOrigin="anonymous";
 qri.onload = function() {
 	dx = canvas.width-pad-sz;
 	dy = canvas.height-pad-sz-30;
     ctx.drawImage(qri,dx,dy,sz,sz);
 }
-qri.src = qr;
+
+//yti.crossOrigin="anonymous";
+yti.onload = function() {
+    ctx.drawImage(yti,0,0,w,h);
+
+    // load qr code second
+	qri.src = qr;    
+}
+
+// load yt image first
+yti.src = yt;
+
+
+
+
 
 
 </script>
