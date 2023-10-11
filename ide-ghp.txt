@@ -1,1 +1,7 @@
-
+sudo apt update && sudo apt upgrade -y
+sudo apt install ruby-full build-essential -y
+gem install jekyll bundler
+bundle init
+echo 'gem "jekyll"' >> Gemfile
+bundle
+bundle exec jekyll serve
