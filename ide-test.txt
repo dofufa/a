@@ -1,0 +1,11 @@
+sudo apt update && sudo apt upgrade -y
+sudo apt install tree zip nano -y
+sudo apt install php7.4 -y 
+sudo apt install php7.4-curl php7.4-gd -y
+sudo apt install php7.4-xml -y
+sudo apt install php7.4-pdo php7.4-sqlite3 -y
+sudo apt install ffmpeg -y
+sudo apt install nodejs -y
+sudo apt install npm -y
+sudo apt install ruby -y
+sudo apt autoremove -y
