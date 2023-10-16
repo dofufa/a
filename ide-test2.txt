@@ -1,4 +1,10 @@
 sudo apt update && sudo apt upgrade -y
 sudo apt install lynx -y # text-only browser testing
 sudo apt-get install dnsutils -y # dig is here
+
+## apache cordova
+sudo apt-add-repository ppa:cordova-ubuntu/ppa
+sudo apt update
+sudo apt-get install cordova-cli
+
 sudo apt autoremove -y
