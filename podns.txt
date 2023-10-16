@@ -1,0 +1,2 @@
+vox-verge=https://feeds.megaphone.fm/vergecast
+vox-pivot=https://feeds.megaphone.fm/pivot
