@@ -1,2 +1,7 @@
 vox-verge=https://feeds.megaphone.fm/vergecast
 vox-pivot=https://feeds.megaphone.fm/pivot
+cbs-60min=https://www.cbsnews.com/latest/rss/60-minutes
+bbc-news@6=https://podcasts.files.bbci.co.uk/b006qjxt.rss
+bbc-newshr=https://podcasts.files.bbci.co.uk/p002vsnk.rss
+bbc-global=https://podcasts.files.bbci.co.uk/p02nq0gn.rss
+twiv-twiv=https://twiv.libsyn.com/twiv
