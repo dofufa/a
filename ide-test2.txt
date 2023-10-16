@@ -1,0 +1,4 @@
+sudo apt update && sudo apt upgrade -y
+sudo apt install lynx -y # text-only browser testing
+sudo apt-get install dnsutils -y # dig is here
+sudo apt autoremove -y
